@@ -1,0 +1,26 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  main {
+    flex-grow: 1;
+  }
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  border-radius: 50px;
+  padding: 0px 24px;
+  background: var(--gradient);
+
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 100%;
+  text-align: center;
+  color: #fff;
+}
