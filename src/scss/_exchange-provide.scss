@@ -1,0 +1,179 @@
+.exchange-provide {
+  margin: 40px 0;
+
+  @media (max-width: $breakpoint768) {
+    margin: 24px 0;
+  }
+
+  // .exchange-provide__inner
+
+  &__inner {}
+
+  // .exchange-provide__columns
+
+  &__columns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 40px;
+    row-gap: 40px;
+
+
+    @media (max-width: $breakpoint768) {
+      grid-template-columns: repeat(1, 1fr);
+      row-gap: 24px;
+    }
+  }
+
+  // .exchange-provide__made
+
+  &__made {
+    display: grid;
+    padding: 28px 30px;
+    min-height: 330px;
+    border-radius: 16px;
+    background-image: image-set(url("../img/exchange-provide/1-bg.webp") 1x type("image/webp"), url("../img/exchange-provide/1-bg.png") 1x, url("../img/exchange-provide/1-bg@2x.webp") 2x type("image/webp"), url("../img/exchange-provide/1-bg@2x.png") 2x);
+    background-image: -webkit-image-set(url("../img/exchange-provide/1-bg.webp") 1x type("image/webp"), url("../img/exchange-provide/1-bg.png") 1x, url("../img/exchange-provide/1-bg@2x.webp") 2x type("image/webp"), url("../img/exchange-provide/1-bg@2x.png") 2x);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+
+    @media (max-width: $breakpoint768) {
+      padding: 20px 16px;
+    }
+  }
+
+  // .exchange-provide__made-label
+
+  &__made-label {
+    margin-bottom: 30px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 110%;
+    color: var(--white);
+
+    @media (max-width: $breakpoint768) {
+      margin-bottom: 20px;
+    }
+  }
+
+  // .exchange-provide__made-list
+
+  &__made-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    max-height: 230px;
+    overflow-y: auto;
+
+    scrollbar-color: var(--pink) var(--bg-color);
+    scrollbar-width: thin;
+
+    &::-webkit-scrollbar {
+      width: 4px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: var(--bg-color);
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: 5px;
+      background: var(--pink);
+    }
+
+
+  }
+
+  // .exchange-provide__made-item
+
+  &__made-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 20px;
+  }
+
+  // .exchange-provide__made-info
+
+  &__made-info {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+  }
+
+  // .exchange-provide__made-icon
+
+  &__made-icon {}
+
+  // .exchange-provide__made-name
+
+  &__made-name {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 120%;
+    color: var(--white);
+  }
+
+  // .exchange-provide__made-network
+
+  &__made-network {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 120%;
+    color: #9db2d2;
+  }
+
+  // .exchange-provide__made-sums
+
+  &__made-sums {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    column-gap: 8px;
+  }
+
+  // .exchange-provide__made-sum
+
+  &__made-sum {
+    font-family: var(--second-family);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 100%;
+    text-align: right;
+    color: var(--white);
+  }
+
+  // .exchange-provide__made-sum--green
+
+  &__made-sum--green {
+    color: #4dfd30;
+  }
+
+  // .exchange-provide__empty
+
+  &__empty {
+    display: grid;
+    padding: 36px;
+    min-height: 330px;
+    border-radius: 16px;
+    background-image: image-set(url("../img/exchange-provide/2-bg.webp") 1x type("image/webp"), url("../img/exchange-provide/2-bg.png") 1x, url("../img/exchange-provide/2-bg@2x.webp") 2x type("image/webp"), url("../img/exchange-provide/2-bg@2x.png") 2x);
+    background-image: -webkit-image-set(url("../img/exchange-provide/2-bg.webp") 1x type("image/webp"), url("../img/exchange-provide/2-bg.png") 1x, url("../img/exchange-provide/2-bg@2x.webp") 2x type("image/webp"), url("../img/exchange-provide/2-bg@2x.png") 2x);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (max-width: $breakpoint768) {
+      padding: 24px 16px;
+    }
+  }
+
+  // .exchange-provide__empty-text
+
+  &__empty-text {
+    margin-top: auto;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 120%;
+    color: #fff;
+  }
+}

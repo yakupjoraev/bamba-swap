@@ -38,16 +38,37 @@ function burgerMenu() {
 burgerMenu()
 
 
-// Вызываем эту функцию, если нам нужно зафиксировать меню при скролле.
-function fixedNav() {
-  const nav = document.querySelector('nav')
+// Аккордеон
+const accordionItems = document.querySelectorAll('[data-accordion-item]');
+let openAccordion = null; // переменная для хранения ссылки на открытый аккордеон
 
-  // тут указываем в пикселях, сколько нужно проскроллить что бы наше меню стало фиксированным
-  const breakpoint = 1
-  if (window.scrollY >= breakpoint) {
-    nav.classList.add('fixed__nav')
-  } else {
-    nav.classList.remove('fixed__nav')
+function toggleAccordion() {
+  if (openAccordion && openAccordion !== this) {
+    // Если есть открытый аккордеон, который не совпадает с текущим
+    openAccordion.classList.remove('active'); // закрыть его
+    const openAccordionContent = openAccordion.nextElementSibling;
+    if (openAccordionContent) {
+      // если у аккордеона есть содержимое
+      openAccordionContent.style.maxHeight = null; // сбросить высоту контента
+    }
   }
+
+  this.classList.toggle('active'); // открыть или закрыть текущий аккордеон
+
+  const content = this.nextElementSibling;
+  if (content) {
+    // если у аккордеона есть содержимое
+    if (content.style.maxHeight) {
+      // Если контент открыт, закрыть его
+      content.style.maxHeight = null;
+    } else {
+      // Если контент закрыт, открыть его
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  }
+
+  openAccordion = this; // запомнить ссылку на открытый аккордеон
 }
-window.addEventListener('scroll', fixedNav)
+
+
+accordionItems.forEach(item => item.addEventListener('click', toggleAccordion));

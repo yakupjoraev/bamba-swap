@@ -5,20 +5,73 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="./img/favicon/site.webmanifest">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#171A1F">
   <title>Index</title>
   <link rel="stylesheet" href="./css/style.min.css">
 </head>
 
 <body class="main__body">
   <div class="wrapper">
-    <!-- Header -->
-    @@include('./html/_header.html')
+    <div class="container">
+      <div class="pages">
+        <ul class="pages__list">
+          <li class="pages__item">
+            <a class="pages__link" href="main.html" target="_blank">
+              Main page
+            </a>
+          </li>
 
-    <!-- Main Page -->
-    <main></main>
+          <li class="pages__item">
+            <a class="pages__link" href="wallet.html" target="_blank">
+              Wallet page
+            </a>
+          </li>
 
-    <!-- Footer -->
-    @@include('./html/_footer.html')
+          <li class="pages__item">
+            <a class="pages__link" href="pool.html" target="_blank">
+              Pool page
+            </a>
+          </li>
+
+          <li class="pages__item">
+            <a class="pages__link" href="pool-2.html" target="_blank">
+              Pool page 2
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <style>
+      .pages__list {
+        display: grid;
+        gap: 20px;
+        padding: 50px 0;
+      }
+
+      .pages__item {
+        display: grid;
+      }
+
+      .pages__link {
+        padding: 20px;
+        background-color: var(--white);
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 120%;
+        color: var(--dark);
+      }
+
+      .pages__link:hover {
+        background: var(--pink);
+        color: var(--white);
+      }
+    </style>
   </div>
 
 

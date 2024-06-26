@@ -1,0 +1,126 @@
+.accordion {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+
+  @media (max-width: $breakpoint992) {
+    row-gap: 16px;
+  }
+}
+
+.accordion__item {
+  overflow: hidden;
+}
+
+
+.accordion__item.active {
+  .accordion__content {
+    row-gap: 12px;
+    padding-top: 20px;
+    max-height: 400px;
+
+    @media (max-width: $breakpoint768) {
+      padding-top: 10px;
+      row-gap: 4px;
+    }
+  }
+
+  .accordion__header-line {
+
+    img {
+      transform: rotate(180deg);
+      filter: brightness(0) saturate(100%) invert(37%) sepia(94%) saturate(1907%) hue-rotate(307deg) brightness(93%) contrast(91%);
+    }
+  }
+}
+
+
+.accordion__header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 20px;
+  border-radius: 10px;
+  padding: 16px 24px;
+  background-color: #363a41;
+  cursor: pointer;
+
+  @media (max-width: $breakpoint768) {
+    column-gap: 12px;
+    padding: 10px 16px;
+  }
+}
+
+.accordion__header-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 120%;
+  color: var(--white);
+
+  @media (max-width: $breakpoint768) {
+    font-size: 14px;
+  }
+}
+
+.accordion__header-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  transition: background-image 0.2s linear;
+
+  img {
+    transition: 0.2s linear;
+  }
+}
+
+.accordion__content {
+  display: flex;
+  flex-direction: column;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s linear, padding 0.3s linear;
+
+  & a {
+    font-size: 14px;
+    line-height: 120%;
+    color: var(--gray);
+    text-decoration: underline;
+  }
+}
+
+.accordion__text {
+  padding: 10px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 120%;
+  color: var(--white);
+
+  @media (max-width: $breakpoint768) {
+    font-size: 12px;
+    line-height: 140%;
+  }
+}
+
+.accordion__link-video {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  width: fit-content;
+  padding: 10px;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 114%;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #848484;
+
+  @media (max-width: $breakpoint768) {
+    column-gap: 4px;
+    font-size: 12px;
+  }
+}

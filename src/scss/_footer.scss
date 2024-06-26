@@ -1,14 +1,12 @@
 // Footer
 .footer {
+  margin-top: 144px;
   padding: 62px 0 72px;
   border-top: 1px solid rgba(255, 255, 255, 0.16);
 
   @media (max-width: $breakpoint992) {
     padding: 40px 0 60px;
-  }
-
-  @media (max-width: $breakpoint768) {
-    max-width: 740px;
+    margin-top: 80px;
   }
 
   // .footer__inner

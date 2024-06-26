@@ -5,75 +5,73 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="./img/favicon/site.webmanifest">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#171A1F">
   <title>Index</title>
   <link rel="stylesheet" href="./css/style.min.css">
 </head>
 
 <body class="main__body">
   <div class="wrapper">
-    <!-- Header -->
-    <header class="header">
-  <!-- Navbar -->
-  <nav class="nav">
     <div class="container">
-      <div class="navbar">
-        <div class="logo">
-          <a class="logo__link" href="#">
-            <img class="logo__img" width="172" height="38" src="./img/logo.svg" alt="logo">
-          </a>
-        </div>
-        <ul class="menu">
-          <li class="menu__item active"><a href="#" class="menu__item-link" data-scroll>Swap</a></li>
-          <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Pool</a></li>
-          <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Listing</a></li>
-          <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Buy Crypto</a></li>
-          <li class="menu__item menu__item--mr"><a href="#" class="menu__item-link" data-scroll>Contact Us</a></li>
-          <li class="menu__item"><a href="#" class="menu__item-link btn" data-scroll>Connect Wallet</a></li>
+      <div class="pages">
+        <ul class="pages__list">
+          <li class="pages__item">
+            <a class="pages__link" href="main.html" target="_blank">
+              Main page
+            </a>
+          </li>
+
+          <li class="pages__item">
+            <a class="pages__link" href="wallet.html" target="_blank">
+              Wallet page
+            </a>
+          </li>
+
+          <li class="pages__item">
+            <a class="pages__link" href="pool.html" target="_blank">
+              Pool page
+            </a>
+          </li>
+
+          <li class="pages__item">
+            <a class="pages__link" href="pool-2.html" target="_blank">
+              Pool page 2
+            </a>
+          </li>
         </ul>
-        <div class="burger">
-          <span></span>
-        </div>
       </div>
     </div>
-  </nav>
-</header>
 
-    <!-- Main Page -->
-    <main></main>
+    <style>
+      .pages__list {
+        display: grid;
+        gap: 20px;
+        padding: 50px 0;
+      }
 
-    <!-- Footer -->
-    <footer class="footer">
-  <div class="container">
-    <div class="footer__inner">
-      <a class="footer__logo" href="#">
-        <img class="footer__logo-img" width="172" height="38" src="./img/logo.svg" alt="logo iocn">
-      </a>
+      .pages__item {
+        display: grid;
+      }
 
-      <nav class="footer__nav">
-        <ul class="footer__list">
-          <li class="footer__item"><a class="footer__link" href="#">About project </a></li>
-          <li class="footer__item"><a class="footer__link" href="#">Participant of the Lucem Find project</a></li>
-          <li class="footer__item"><a class="footer__link" href="#">Swap Usage Rules</a></li>
-          <li class="footer__item"><a class="footer__link" href="#">Listing of new tokens</a></li>
-        </ul>
+      .pages__link {
+        padding: 20px;
+        background-color: var(--white);
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 120%;
+        color: var(--dark);
+      }
 
-        <ul class="footer__list">
-          <li class="footer__item"><a class="footer__link" href="#">Liquidity Provider</a></li>
-          <li class="footer__item"><a class="footer__link" href="#">Road map</a></li>
-          <li class="footer__item"><a class="footer__link" href="#">Partners</a></li>
-          <li class="footer__item"><a class="footer__link" href="#">Fee</a></li>
-          <li class="footer__item"><a class="footer__link" href="#">Pool</a></li>
-        </ul>
-
-        <ul class="footer__list">
-          <li class="footer__item"><a class="footer__link" href="#">Term of Use </a></li>
-          <li class="footer__item"><a class="footer__link" href="#">Contact of us</a></li>
-          <li class="footer__item"><a class="footer__link" href="#">Contact to Sale</a></li>
-        </ul>
-      </nav>
-    </div>
-  </div>
-</footer>
+      .pages__link:hover {
+        background: var(--pink);
+        color: var(--white);
+      }
+    </style>
   </div>
 
 
