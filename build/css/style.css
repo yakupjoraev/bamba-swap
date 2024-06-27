@@ -189,6 +189,7 @@ body {
   background-color: var(--bg-color);
   background-image: url("data:image/svg+xml,%3Csvg width='1920' height='2505' viewBox='0 0 1920 2505' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg opacity='0.1' filter='url(%23filter0_f_2125_1223)'%3E%3Cellipse cx='1300' cy='811' rx='324' ry='200' fill='%2300C2FF'/%3E%3C/g%3E%3Cg opacity='0.2' filter='url(%23filter1_f_2125_1223)'%3E%3Cellipse cx='1622' cy='811' rx='324' ry='200' fill='%238F00FF'/%3E%3C/g%3E%3Cg opacity='0.1' filter='url(%23filter2_f_2125_1223)'%3E%3Cellipse cx='416' cy='2424' rx='324' ry='200' fill='%2300C2FF'/%3E%3C/g%3E%3Cg opacity='0.2' filter='url(%23filter3_f_2125_1223)'%3E%3Cellipse cx='738' cy='2424' rx='324' ry='200' fill='%238F00FF'/%3E%3C/g%3E%3Cg opacity='0.1' filter='url(%23filter4_f_2125_1223)'%3E%3Cellipse cx='210' cy='126.5' rx='324' ry='240.5' fill='%234E55FF'/%3E%3C/g%3E%3Cg opacity='0.2' filter='url(%23filter5_f_2125_1223)'%3E%3Cellipse cx='556' cy='126.5' rx='324' ry='240.5' fill='%238F00FF'/%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='filter0_f_2125_1223' x='656' y='291' width='1288' height='1040' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape'/%3E%3CfeGaussianBlur stdDeviation='160' result='effect1_foregroundBlur_2125_1223'/%3E%3C/filter%3E%3Cfilter id='filter1_f_2125_1223' x='978' y='291' width='1288' height='1040' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape'/%3E%3CfeGaussianBlur stdDeviation='160' result='effect1_foregroundBlur_2125_1223'/%3E%3C/filter%3E%3Cfilter id='filter2_f_2125_1223' x='-228' y='1904' width='1288' height='1040' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape'/%3E%3CfeGaussianBlur stdDeviation='160' result='effect1_foregroundBlur_2125_1223'/%3E%3C/filter%3E%3Cfilter id='filter3_f_2125_1223' x='94' y='1904' width='1288' height='1040' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape'/%3E%3CfeGaussianBlur stdDeviation='160' result='effect1_foregroundBlur_2125_1223'/%3E%3C/filter%3E%3Cfilter id='filter4_f_2125_1223' x='-394' y='-394' width='1208' height='1041' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape'/%3E%3CfeGaussianBlur stdDeviation='140' result='effect1_foregroundBlur_2125_1223'/%3E%3C/filter%3E%3Cfilter id='filter5_f_2125_1223' x='-88' y='-434' width='1288' height='1121' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape'/%3E%3CfeGaussianBlur stdDeviation='160' result='effect1_foregroundBlur_2125_1223'/%3E%3C/filter%3E%3C/defs%3E%3C/svg%3E%0A");
   background-repeat: no-repeat;
+  background-size: cover;
   font-family: var(--font-family);
   font-weight: 400;
   line-height: 120%;
@@ -333,6 +334,7 @@ body.locked {
 
 .menu__item-link.btn {
   width: 160px;
+  margin-right: 10px;
 }
 
 .burger {
@@ -1002,7 +1004,7 @@ body.locked {
 .modal {
   display: none;
   position: fixed;
-  z-index: 1;
+  z-index: 1000;
   left: 0;
   top: 0;
   width: 100%;
@@ -1286,6 +1288,9 @@ body.locked {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-column-gap: 24px;
+     -moz-column-gap: 24px;
+          column-gap: 24px;
   margin-bottom: 16px;
 }
 
@@ -1595,6 +1600,193 @@ body.locked {
   color: var(--white);
 }
 
+.modal-wallet {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 1840px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  -webkit-backdrop-filter: none;
+          backdrop-filter: none;
+  background-color: transparent;
+}
+
+.modal-content {
+  margin: 0;
+  margin-top: 30px;
+  margin-left: auto;
+}
+
+.wallet {
+  border-radius: 16px;
+  max-width: 364px;
+  width: 364px;
+  background-color: #0a0012;
+}
+
+.wallet__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 16px;
+     -moz-column-gap: 16px;
+          column-gap: 16px;
+  margin-bottom: 24px;
+}
+
+.wallet__back {
+  position: static;
+}
+
+.wallet__user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
+          column-gap: 10px;
+}
+
+.wallet__user-icon {
+  min-width: 40px;
+  border-radius: 100%;
+}
+
+.wallet__user-hash {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+  color: var(--white);
+}
+
+.wallet__exit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  margin-left: auto;
+}
+
+.wallet__balance {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 4px;
+  margin-bottom: 28px;
+}
+
+.wallet__balance-label {
+  font-size: 12px;
+  line-height: 100%;
+  color: var(--white);
+}
+
+.wallet__balance-sum {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 100%;
+  color: var(--white);
+}
+
+.wallet__balance-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 4px;
+     -moz-column-gap: 4px;
+          column-gap: 4px;
+}
+
+.wallet__balance-text {
+  font-size: 14px;
+  line-height: 100%;
+  color: var(--white);
+}
+
+.wallet__balance-text.green-color {
+  color: #10d424;
+}
+
+.wallet__balance-text.red-color {
+  color: #f34040;
+}
+
+.wallet__cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  -webkit-column-gap: 16px;
+     -moz-column-gap: 16px;
+          column-gap: 16px;
+  row-gap: 16px;
+}
+
+.wallet__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-column-gap: 8px;
+     -moz-column-gap: 8px;
+          column-gap: 8px;
+  padding: 16px 16px 20px;
+  border-radius: 12px;
+  height: 94px;
+}
+
+.wallet__card--buy {
+  background: -o-linear-gradient(48deg, #b183d4 0%, #811dd3 100%);
+  background: linear-gradient(42deg, #b183d4 0%, #811dd3 100%);
+}
+
+.wallet__card--nft {
+  background: -o-linear-gradient(45deg, #ec4c99 0%, #ad0054 100%);
+  background: linear-gradient(45deg, #ec4c99 0%, #ad0054 100%);
+}
+
+.wallet__border {
+  margin: 24px 0;
+  width: 100%;
+  height: 1px;
+  background-color: #2b2b2b;
+}
+
+.wallet__tokens .tokens__label {
+  font-size: 12px;
+}
+
 .footer {
   margin-top: 144px;
   padding: 62px 0 72px;
@@ -1845,6 +2037,7 @@ body.locked {
     width: -moz-fit-content;
     width: fit-content;
     height: 50px;
+    margin-right: 0;
   }
 }
 
@@ -1983,6 +2176,10 @@ body.locked {
 
   .buy-crypto__label {
     font-size: 18px;
+  }
+
+  .modal-content {
+    margin-top: 20px;
   }
 
   .footer__inner {

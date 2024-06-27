@@ -52,6 +52,7 @@
 
     &.btn {
       width: 160px;
+      margin-right: 10px;
 
       @media (hover:hover) {
         &:hover {
@@ -175,6 +176,7 @@
     &.btn {
       width: fit-content;
       height: 50px;
+      margin-right: 0;
     }
   }
 }
