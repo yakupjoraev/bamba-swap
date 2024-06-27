@@ -25,7 +25,9 @@
   // }
 }
 
-.modal-content {
+.modal-content {}
+
+.wallet {
   margin: 0;
   margin-top: 30px;
   margin-left: auto;
@@ -33,9 +35,7 @@
   @media (max-width: $breakpoint768) {
     margin-top: 20px;
   }
-}
 
-.wallet {
   border-radius: 16px;
   max-width: 364px;
   width: 364px;
