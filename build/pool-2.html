@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="./img/favicon/site.webmanifest">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#171A1F">
+  <title>Index</title>
+  <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body class="main__body">
+  <div class="wrapper">
+    <!-- Header -->
+    <header class="header">
+  <!-- Navbar -->
+  <nav class="nav">
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <a class="logo__link" href="#">
+            <img class="logo__img" width="172" height="38" src="./img/logo.svg" alt="logo">
+          </a>
+        </div>
+        <ul class="menu">
+          <li class="menu__item active"><a href="#" class="menu__item-link" data-scroll>Swap</a></li>
+          <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Pool</a></li>
+          <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Listing</a></li>
+          <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Buy Crypto</a></li>
+          <li class="menu__item menu__item--mr"><a href="#" class="menu__item-link" data-scroll>Contact Us</a></li>
+          <li class="menu__item"><a href="#" class="menu__item-link btn open-modal-btn" data-modal-id="wallet"
+              data-scroll>Connect Wallet</a></li>
+        </ul>
+        <div class="burger">
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+    <!-- Main Page -->
+    <main>
+      <div class="pool">
+  <div class="container">
+    <div class="pool__inner">
+      <h1 class="title">Bamba Swap</h1>
+
+      <div class="pool__main pool__main--fs">
+        <div class="pool__head">
+          <h2 class="pool__title">Positions</h2>
+
+          <a class="pool__btn btn" href="#">New Position</a>
+        </div>
+
+        <div class="pool__middle">
+          <div class="pool__token">
+            <div class="pool__token-head">
+              <div class="pool__token-info">
+                <div class="pool__token-icons">
+                  <img class="pool__token-icon" width="30" height="30" src="./img/eth.svg" alt="token icon">
+                  <img class="pool__token-icon" width="30" height="30" src="./img/usdt.svg" alt="token icon">
+                </div>
+
+                <div class="pool__token-names">
+                  <p class="pool__token-name">ETH</p>
+                  <span>/</span>
+                  <p class="pool__token-name">USDT</p>
+                </div>
+              </div>
+
+              <div class="pool__token-range">In range</div>
+            </div>
+
+            <div class="pool__token-footer">
+              <p class="pool__token-text">Min 575.76 USDT per ETH</p>
+              <img class="pool__token-arrows" width="17" height="10" src="./img/icons/pool-token-arrows.svg" alt="">
+              <p class="pool__token-text">Max 575.76 USDT per ETH</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+      <!-- Modal -->
+
+<!-- <button class="open-modal-btn" data-modal-id="select-network">Open Modal select network</button> -->
+<div class="modal" id="select-network">
+  <div class="modal-content">
+    <div class="modal__head">
+      <h3 class="modal__label">Select Network</h3>
+      <button type="button" class="close-modal-btn">
+        <img width="17" height="17" src="./img/icons/modal-close.svg" alt="close">
+      </button>
+    </div>
+
+    <div class="modal__inner">
+      <ul class="network-list">
+        <li class="network-item active">
+          <img class="network-item__icon" width="36" height="36" src="./img/eth.svg" alt="token">
+          <p class="network-item__name">Polygon</p>
+        </li>
+
+        <li class="network-item">
+          <img class="network-item__icon" width="36" height="36" src="./img/eth.svg" alt="token">
+          <p class="network-item__name">Polygon</p>
+        </li>
+
+        <li class="network-item">
+          <img class="network-item__icon" width="36" height="36" src="./img/eth.svg" alt="token">
+          <p class="network-item__name">Polygon</p>
+        </li>
+
+        <li class="network-item network-item--disabled">
+          <img class="network-item__icon" width="36" height="36" src="./img/eth.svg" alt="token">
+          <p class="network-item__name">Polygon</p>
+        </li>
+
+        <li class="network-item network-item--disabled">
+          <img class="network-item__icon" width="36" height="36" src="./img/eth.svg" alt="token">
+          <p class="network-item__name">Polygon</p>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+<!-- <button class="open-modal-btn" data-modal-id="select-token">Open Modal select token</button> -->
+<div class="modal" id="select-token">
+  <div class="modal-content">
+    <div class="modal__head">
+      <h3 class="modal__label">Select a token</h3>
+      <button type="button" class="close-modal-btn">
+        <img width="17" height="17" src="./img/icons/modal-close.svg" alt="close">
+      </button>
+    </div>
+
+    <div class="modal__inner">
+      <form class="select-tokens" action="#">
+        <div class="select-tokens__top">
+          <div class="search-container">
+            <div class="search">
+              <input class="search__input" type="search" placeholder="Search Tokens">
+              <img class="search__icon" width="20" height="20" src="./img/icons/src.svg" alt="src icon">
+            </div>
+
+            <ul class="search__list">
+              <li class="search__item">
+                <a class="search__link" href="#">
+                  <img class="search__item-icon" width="30" height="30" src="./img/eth.svg" alt="token icon">
+
+                  <p class="search__item-name">ETH</p>
+                </a>
+              </li>
+
+              <li class="search__item">
+                <a class="search__link" href="#">
+                  <img class="search__item-icon" width="30" height="30" src="./img/eth.svg" alt="token icon">
+
+                  <p class="search__item-name">ETH</p>
+                </a>
+              </li>
+
+              <li class="search__item">
+                <a class="search__link" href="#">
+                  <img class="search__item-icon" width="30" height="30" src="./img/eth.svg" alt="token icon">
+
+                  <p class="search__item-name">ETH</p>
+                </a>
+              </li>
+
+              <li class="search__item">
+                <a class="search__link" href="#">
+                  <img class="search__item-icon" width="30" height="30" src="./img/eth.svg" alt="token icon">
+
+                  <p class="search__item-name">ETH</p>
+                </a>
+              </li>
+
+              <li class="search__item">
+                <a class="search__link" href="#">
+                  <img class="search__item-icon" width="30" height="30" src="./img/eth.svg" alt="token icon">
+
+                  <p class="search__item-name">ETH</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+
+        </div>
+
+        <div class="select-tokens__bottom">
+          <div class="tokens">
+            <div class="tokens__head">
+              <h4 class="tokens__label">Your tokens</h4>
+            </div>
+
+            <ul class="tokens__list">
+              <li class="tokens__item">
+                <div class="tokens__item-info">
+                  <img class="tokens__item-icon" width="36" height="36" src="./img/eth.svg" alt="token icon">
+
+                  <div class="tokens__item-rows">
+                    <p class="tokens__item-name">Ethereum</p>
+                    <div class="tokens__item-sums">
+                      <div class="tokens__item-sum">$2.44</div>
+                      <div class="tokens__item-sum green-color">+4.73%</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tokens__item-rows tokens__item-rows--right">
+                  <p class="tokens__item-name">7 153.13</p>
+                  <div class="tokens__item-sums">
+                    <div class="tokens__item-sum">$620,372.13</div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="tokens__item">
+                <div class="tokens__item-info">
+                  <img class="tokens__item-icon" width="36" height="36" src="./img/eth.svg" alt="token icon">
+
+                  <div class="tokens__item-rows">
+                    <p class="tokens__item-name">Ethereum</p>
+                    <div class="tokens__item-sums">
+                      <div class="tokens__item-sum">$2.44</div>
+                      <div class="tokens__item-sum red-color">+4.73%</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tokens__item-rows tokens__item-rows--right">
+                  <p class="tokens__item-name">7 153.13</p>
+                  <div class="tokens__item-sums">
+                    <div class="tokens__item-sum">$620,372.13</div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="tokens__item">
+                <div class="tokens__item-info">
+                  <img class="tokens__item-icon" width="36" height="36" src="./img/eth.svg" alt="token icon">
+
+                  <div class="tokens__item-rows">
+                    <p class="tokens__item-name">Ethereum</p>
+                    <div class="tokens__item-sums">
+                      <div class="tokens__item-sum">$2.44</div>
+                      <div class="tokens__item-sum green-color">+4.73%</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tokens__item-rows tokens__item-rows--right">
+                  <p class="tokens__item-name">7 153.13</p>
+                  <div class="tokens__item-sums">
+                    <div class="tokens__item-sum">$620,372.13</div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="tokens__item">
+                <div class="tokens__item-info">
+                  <img class="tokens__item-icon" width="36" height="36" src="./img/eth.svg" alt="token icon">
+
+                  <div class="tokens__item-rows">
+                    <p class="tokens__item-name">Ethereum</p>
+                    <div class="tokens__item-sums">
+                      <div class="tokens__item-sum">$2.44</div>
+                      <div class="tokens__item-sum green-color">+4.73%</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tokens__item-rows tokens__item-rows--right">
+                  <p class="tokens__item-name">7 153.13</p>
+                  <div class="tokens__item-sums">
+                    <div class="tokens__item-sum">$620,372.13</div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </form>
+    </div>
+
+  </div>
+</div>
+
+<!-- <button class="open-modal-btn" data-modal-id="confirm-swap">Open Modal confirm-swap</button> -->
+<div class="modal" id="confirm-swap">
+  <div class="modal-content">
+    <div class="modal__head">
+      <h3 class="modal__title">Confirm Swap</h3>
+      <button type="button" class="close-modal-btn">
+        <img width="17" height="17" src="./img/icons/modal-close.svg" alt="close">
+      </button>
+    </div>
+
+    <div class="modal__inner">
+      <div class="form__group form__group--review">
+        <div class="form__swap">
+          <div class="form__swap-inputs">
+            <label class="form__label" for="#">You pay</label>
+            <input class="form__swap-input" type="text" value="32.00 AVAX">
+            <div class="form__swap-usd">11 501,80 USD</div>
+          </div>
+
+          <div class="form__swap-select">
+            <div class="form__swap-selcted">
+              <img class="form__swap-selcted-icon" width="30" height="30" src="./img/eth.svg" alt="token icon">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="form__group form__group--review">
+        <div class="form__swap">
+          <div class="form__swap-inputs">
+            <label class="form__label" for="#">You recieve</label>
+            <input class="form__swap-input" type="text" value="16.000069 ETH">
+            <div class="form__swap-usd">98052,02 USD</div>
+          </div>
+
+          <div class="form__swap-select">
+            <div class="form__swap-selcted">
+              <img class="form__swap-selcted-icon" width="30" height="30" src="./img/eth.svg" alt="token icon">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="confirm-swap__steps">
+        <div class="confirm-swap__step confirm-swap__step--first">
+          <div class="confirm-swap__step-icon">
+            <img width="20" height="20" src="./img/icons/ic_round-check.svg" alt="check icon">
+          </div>
+
+          <div class="confirm-swap__step-texts">
+            <p class="confirm-swap__step-text">Sign message</p>
+          </div>
+        </div>
+
+        <div class="confirm-swap__step-border">
+          <svg width="1" height="14" viewBox="0 0 1 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="0.5" y1="2.18557e-08" x2="0.499999" y2="14" stroke="white" stroke-dasharray="4 4" />
+          </svg>
+        </div>
+
+        <div class="confirm-swap__step confirm-swap__step--second">
+          <div class="confirm-swap__step-icon">
+            <img width="20" height="20" src="./img/icons/system-regular-154-swap.svg" alt="check icon">
+          </div>
+
+          <div class="confirm-swap__step-texts">
+            <p class="confirm-swap__step-text">Confirm swap in wallet</p>
+            <p class="confirm-swap__step-text confirm-swap__step-text--lite">Learn more about swap</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- <button class="open-modal-btn" data-modal-id="swap-success">Open Modal Swap Success!</button> -->
+<div class="modal" id="swap-success">
+  <div class="modal-content">
+    <div class="modal__head">
+      <button type="button" class="close-modal-btn">
+        <img width="17" height="17" src="./img/icons/modal-close.svg" alt="close">
+      </button>
+    </div>
+
+    <div class="modal__inner">
+      <div class="swap-success">
+        <img class="swap-success__check" width="140" height="140" src="./img/icons/check-icon.svg" alt="cions">
+
+        <h3 class="swap-success__title">Swap Success!</h3>
+
+        <div class="swap-success__columns">
+          <div class="swap-success__column">
+            <img class="swap-success__column-icon" width="30" height="30" src="./img/eth.svg" alt="token icon">
+
+            <p class="swap-success__column-text">32.00 AVAX</p>
+          </div>
+
+          <div class="swap-success__column">
+            <img class="swap-success__column-icon" width="20" height="20" src="./img/icons/swap-success-arrow.svg"
+              alt="token icon">
+          </div>
+
+          <div class="swap-success__column">
+            <img class="swap-success__column-icon" width="30" height="30" src="./img/eth.svg" alt="token icon">
+
+            <p class="swap-success__column-text">16.00065 ETH</p>
+          </div>
+        </div>
+
+        <a class="swap-success__btn btn" href="#">Main Page</a>
+      </div>
+    </div>
+
+
+  </div>
+</div>
+
+
+
+<!-- <button class="open-modal-btn" data-modal-id="wallet">Open Modal Wallet!</button> -->
+<div class="modal modal-wallet" id="wallet">
+  <div class="modal-content wallet">
+    <div class="modal__head wallet__head">
+      <button type="button" class="wallet__back close-modal-btn">
+        <img width="30" height="24" src="./img/icons/wallet-back.svg" alt="close">
+      </button>
+
+      <div class="wallet__user">
+        <img class="wallet__user-icon" width="40" height="40" src="./img/wallet-user.svg" alt="user icon">
+
+        <p class="wallet__user-hash">0x235...643657</p>
+      </div>
+
+      <button type="button" class="wallet__exit">
+        <img class="button__exit-icon" width="24" height="24" src="./img/icons/wallet-exit.svg" alt="exit icon">
+      </button>
+    </div>
+
+    <div class="modal__inner wallet__inner">
+      <div class="wallet__balance">
+        <p class="wallet__balance-label">Balance</p>
+        <div class="wallet__balance-sum">$6,985.57</div>
+        <div class="wallet__balance-info">
+          <img class="wallet__balance-arrow" width="16" height="16" src="./img/icons/wallet-balance-up.svg"
+            alt="arrow icon">
+          <p class="wallet__balance-text">$56.87 </p>
+          <p class="wallet__balance-text green-color">(0.82%)</p>
+        </div>
+      </div>
+
+      <div class="wallet__cards">
+        <div class="wallet__card wallet__card--buy">
+          <img class="wallet__card-icon" width="24" height="24" src="./img/icons/solar_card-outline.svg" alt="icon">
+
+          <p class="wallet__card-text">Buy</p>
+        </div>
+
+        <div class="wallet__card wallet__card--nft">
+          <img class="wallet__card-icon" width="24" height="24" src="./img/icons/clarity_picture-line.svg" alt="icon">
+
+          <p class="wallet__card-text">View NFTs</p>
+        </div>
+      </div>
+
+      <div class="wallet__border"></div>
+
+      <div class="wallet__tokens">
+        <div class="tokens">
+          <div class="tokens__head">
+            <h4 class="tokens__label">Tokens</h4>
+            <h4 class="tokens__label">NFTs</h4>
+            <h4 class="tokens__label">Pools</h4>
+            <h4 class="tokens__label">Activity</h4>
+          </div>
+
+          <ul class="tokens__list">
+            <li class="tokens__item">
+              <div class="tokens__item-info">
+                <img class="tokens__item-icon" width="36" height="36" src="./img/eth.svg" alt="token icon">
+
+                <div class="tokens__item-rows">
+                  <p class="tokens__item-name">Ethereum</p>
+                  <div class="tokens__item-sums">
+                    <div class="tokens__item-sum">$2.44</div>
+                    <div class="tokens__item-sum green-color">+4.73%</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tokens__item-rows tokens__item-rows--right">
+                <p class="tokens__item-name">7 153.13</p>
+                <div class="tokens__item-sums">
+                  <div class="tokens__item-sum">$620,372.13</div>
+                </div>
+              </div>
+            </li>
+
+            <li class="tokens__item">
+              <div class="tokens__item-info">
+                <img class="tokens__item-icon" width="36" height="36" src="./img/eth.svg" alt="token icon">
+
+                <div class="tokens__item-rows">
+                  <p class="tokens__item-name">Ethereum</p>
+                  <div class="tokens__item-sums">
+                    <div class="tokens__item-sum">$2.44</div>
+                    <div class="tokens__item-sum red-color">+4.73%</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tokens__item-rows tokens__item-rows--right">
+                <p class="tokens__item-name">7 153.13</p>
+                <div class="tokens__item-sums">
+                  <div class="tokens__item-sum">$620,372.13</div>
+                </div>
+              </div>
+            </li>
+
+            <li class="tokens__item">
+              <div class="tokens__item-info">
+                <img class="tokens__item-icon" width="36" height="36" src="./img/eth.svg" alt="token icon">
+
+                <div class="tokens__item-rows">
+                  <p class="tokens__item-name">Ethereum</p>
+                  <div class="tokens__item-sums">
+                    <div class="tokens__item-sum">$2.44</div>
+                    <div class="tokens__item-sum green-color">+4.73%</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tokens__item-rows tokens__item-rows--right">
+                <p class="tokens__item-name">7 153.13</p>
+                <div class="tokens__item-sums">
+                  <div class="tokens__item-sum">$620,372.13</div>
+                </div>
+              </div>
+            </li>
+
+            <li class="tokens__item">
+              <div class="tokens__item-info">
+                <img class="tokens__item-icon" width="36" height="36" src="./img/eth.svg" alt="token icon">
+
+                <div class="tokens__item-rows">
+                  <p class="tokens__item-name">Ethereum</p>
+                  <div class="tokens__item-sums">
+                    <div class="tokens__item-sum">$2.44</div>
+                    <div class="tokens__item-sum green-color">+4.73%</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tokens__item-rows tokens__item-rows--right">
+                <p class="tokens__item-name">7 153.13</p>
+                <div class="tokens__item-sums">
+                  <div class="tokens__item-sum">$620,372.13</div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <a class="footer__logo" href="#">
+        <img class="footer__logo-img" width="172" height="38" src="./img/logo.svg" alt="logo iocn">
+      </a>
+
+      <nav class="footer__nav">
+        <ul class="footer__list">
+          <li class="footer__item"><a class="footer__link" href="#">About project </a></li>
+          <li class="footer__item"><a class="footer__link" href="#">Participant of the Lucem Find project</a></li>
+          <li class="footer__item"><a class="footer__link" href="#">Swap Usage Rules</a></li>
+          <li class="footer__item"><a class="footer__link" href="#">Listing of new tokens</a></li>
+        </ul>
+
+        <ul class="footer__list">
+          <li class="footer__item"><a class="footer__link" href="#">Liquidity Provider</a></li>
+          <li class="footer__item"><a class="footer__link" href="#">Road map</a></li>
+          <li class="footer__item"><a class="footer__link" href="#">Partners</a></li>
+          <li class="footer__item"><a class="footer__link" href="#">Fee</a></li>
+          <li class="footer__item"><a class="footer__link" href="#">Pool</a></li>
+        </ul>
+
+        <ul class="footer__list">
+          <li class="footer__item"><a class="footer__link" href="#">Term of Use </a></li>
+          <li class="footer__item"><a class="footer__link" href="#">Contact of us</a></li>
+          <li class="footer__item"><a class="footer__link" href="#">Contact to Sale</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</footer>
+  </div>
+
+
+</body>
+
+<script src="./js/scripts.min.js"></script>
+
+</html>

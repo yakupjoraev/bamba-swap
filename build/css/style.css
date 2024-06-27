@@ -1784,6 +1784,200 @@ body.locked {
   font-size: 12px;
 }
 
+.pool {
+  margin: 120px 0;
+}
+
+.pool__inner {
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+.pool__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  row-gap: 32px;
+  min-height: 450px;
+  padding: 30px;
+  border-radius: 16px;
+  background-color: #0a0012;
+}
+
+.pool__main--fs {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.pool__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+  width: 100%;
+}
+
+.pool__head .pool__btn {
+  max-width: 166px;
+  height: 40px;
+}
+
+.pool__title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 100%;
+  color: var(--white);
+}
+
+.pool__btn {
+  max-width: 220px;
+  height: 48px;
+}
+
+.pool__middle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  row-gap: 16px;
+  width: 100%;
+}
+
+.pool__text {
+  max-width: 284px;
+  font-size: 18px;
+  line-height: 120%;
+  text-align: center;
+  color: #fff;
+}
+
+.pool__token {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 8px;
+  padding: 16px 20px 20px;
+  border-radius: 10px;
+  background-color: #363a41;
+  width: 100%;
+}
+
+.pool__token-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+}
+
+.pool__token-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 12px;
+     -moz-column-gap: 12px;
+          column-gap: 12px;
+}
+
+.pool__token-icons {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.pool__token-icon:nth-child(2) {
+  z-index: 1;
+  margin: -16px 0px 0 12px;
+}
+
+.pool__token-names {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  white-space: nowrap;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 100%;
+  color: var(--white);
+}
+
+.pool__token-name {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 100%;
+  color: var(--white);
+}
+
+.pool__token-range {
+  margin-left: auto;
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 100%;
+  color: #ec4c99;
+}
+
+.pool__token-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 8px;
+     -moz-column-gap: 8px;
+          column-gap: 8px;
+}
+
+.pool__token-text {
+  font-size: 13px;
+  line-height: 100%;
+  color: var(--white);
+}
+
 .footer {
   margin-top: 144px;
   padding: 62px 0 72px;
@@ -1891,6 +2085,10 @@ body.locked {
         -ms-flex-direction: column;
             flex-direction: column;
     row-gap: 40px;
+  }
+
+  .pool {
+    margin: 80px 0;
   }
 
   .footer {
@@ -2177,6 +2375,29 @@ body.locked {
 
   .wallet {
     margin-top: 20px;
+  }
+
+  .pool {
+    margin: 40px 0;
+  }
+
+  .pool__main {
+    padding: 20px;
+    row-gap: 20px;
+  }
+
+  .pool__token {
+    padding: 16px 12px;
+  }
+
+  .pool__token-footer {
+    -webkit-column-gap: 4px;
+       -moz-column-gap: 4px;
+            column-gap: 4px;
+  }
+
+  .pool__token-text {
+    font-size: 10px;
   }
 
   .footer__inner {
