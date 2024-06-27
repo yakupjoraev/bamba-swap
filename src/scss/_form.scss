@@ -1,0 +1,270 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 40px 24px;
+  border-radius: 16px;
+  background-color: #0a0012;
+
+  @media (max-width: $breakpoint768) {
+    padding: 20px 16px;
+  }
+
+  // .form__head
+  &__head {
+    margin-bottom: 24px;
+  }
+
+  // .form__head-label
+  &__head-label {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+    color: #fff;
+  }
+
+  // .form__group
+
+  &__group {
+    margin-bottom: 12px;
+
+    &--review {
+      border-radius: 10px;
+      background-color: #363a41;
+
+      .form__swap {
+        padding: 10px 12px 10px 16px;
+      }
+
+      &~.form__btn {
+        margin-top: 10px;
+      }
+
+      .form__swap-inputs {
+        row-gap: 3px;
+      }
+
+      .form__swap-input {
+        font-size: 24px;
+
+        @media (max-width: $breakpoint768) {
+          font-size: 18px;
+        }
+      }
+
+      .form__swap {
+        height: auto;
+      }
+
+      .form__label {
+        margin-bottom: 0;
+        font-size: 12px;
+      }
+
+      .form__swap-select {
+        height: auto;
+        background-color: transparent;
+      }
+    }
+  }
+
+  // .form__label
+
+  &__label {
+    display: inline-flex;
+    margin-bottom: 8px;
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 100%;
+    color: #fff;
+  }
+
+  // .form__select
+
+  &__select {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    border-radius: 10px;
+    height: 60px;
+    background: #363a41;
+    cursor: pointer;
+  }
+
+  // .form__selected
+
+  &__selected {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    width: 100%;
+  }
+
+  // .form__selected-name
+
+  &__selected-name {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    color: #fff;
+  }
+
+  // .form__select-arrow
+
+  &__select-arrow {
+    margin-left: auto;
+  }
+
+  // .form__swap
+
+  &__swap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 20px;
+    padding: 12px 12px 12px 16px;
+    border-radius: 10px;
+    height: 60px;
+    background: #363a41;
+  }
+
+  // .form__swap-inputs
+
+  &__swap-inputs {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    max-width: 200px;
+    width: 100%;
+  }
+
+  // .form__swap-input
+
+  &__swap-input {
+    width: 100%;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 100%;
+    color: #fff;
+  }
+
+  // .form__swap-usd
+
+  &__swap-usd {
+    width: 100%;
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0.02em;
+    color: #c1c1c1;
+  }
+
+  // .form__swap-select
+
+  &__swap-select {
+    border-radius: 6px;
+    padding: 12px;
+    height: 44px;
+    width: fit-content;
+    margin-left: auto;
+    background-color: #15181e;
+    cursor: pointer;
+  }
+
+  // .form__swap-selcted
+
+  &__swap-selcted {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+    width: fit-content;
+  }
+
+  // .form__swap-selcted-icon
+
+  &__swap-selcted-icon {
+    min-width: 8px;
+  }
+
+  // .form__swap-selected-name
+
+  &__swap-selected-name {}
+
+  // .form__swap-selected-arrow
+
+  &__swap-selected-arrow {}
+
+  // .form__swaping-icon
+
+  &__swaping-icon {
+    margin: 0 auto;
+  }
+
+  // .form__btn
+
+  &__btn {
+    margin-top: 24px;
+    width: 100%;
+    height: 48px;
+    font-weight: 600;
+    font-size: 16px;
+  }
+
+  // .form__footer
+
+  &__footer {
+    margin-top: 30px;
+  }
+
+  // .form__footer-label
+
+  &__footer-label {
+    margin-bottom: 12px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    color: #fff;
+  }
+
+  // .form__footer-list
+
+  &__footer-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+
+  // .form__footer-item
+
+  &__footer-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 20px;
+  }
+
+  // .form__footer-text
+
+  &__footer-text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 120%;
+    color: #fff;
+
+    &.green-color {
+      color: #10d424;
+    }
+
+    &:nth-child(2) {
+      text-align: right;
+    }
+  }
+
+}

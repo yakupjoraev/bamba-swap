@@ -8,6 +8,30 @@
   }
 }
 
+.title {
+  margin: 0 auto 60px;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 72px;
+  line-height: 100%;
+  letter-spacing: -0.06em;
+  text-align: center;
+  background: linear-gradient(113deg, rgba(255, 253, 253, 0.8) 4.34%, rgba(196, 121, 255, 0.8) 41.45%, rgba(212, 156, 255, 0.8) 80.29%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  mix-blend-mode: hard-light;
+
+  @media (max-width: $breakpoint992) {
+    margin: 0 auto 40px;
+    font-size: 48px;
+  }
+
+  @media (max-width: $breakpoint768) {
+    font-size: 36px;
+  }
+}
+
 .btn {
   display: flex;
   align-items: center;
@@ -23,4 +47,12 @@
   line-height: 100%;
   text-align: center;
   color: #fff;
+}
+
+.green-color {
+  color: #10d424;
+}
+
+.red-color {
+  color: #f34040;
 }

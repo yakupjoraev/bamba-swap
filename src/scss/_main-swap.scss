@@ -1,0 +1,19 @@
+.main-swap {
+  margin: 120px 0;
+
+  @media (max-width: $breakpoint992) {
+    margin: 80px 0;
+  }
+
+  @media (max-width: $breakpoint768) {
+    margin: 40px 0;
+  }
+
+  // .main-swap__inner
+
+  &__inner {
+    max-width: 494px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}

@@ -7,10 +7,16 @@
 
 // Sections or Pages SCSS-files imports
 @import './header';
+@import './main-swap';
 @import './faq';
 @import './accordion';
 @import './cards';
 @import './exchange-provide';
+@import './form';
+@import './modals';
+@import './tokens';
+@import './search';
+@import './buy-crypto';
 @import './footer';
 
 // Libs
