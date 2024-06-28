@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="./img/favicon/site.webmanifest">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#171A1F">
+  <title>Index</title>
+  <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body class="main__body">
+  <div class="wrapper">
+    <!-- Header -->
+    <header class="header">
+  <!-- Navbar -->
+  <nav class="nav">
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <a class="logo__link" href="#">
+            <img class="logo__img" width="172" height="38" src="./img/logo.svg" alt="logo">
+          </a>
+        </div>
+        <ul class="menu">
+          <li class="menu__item active"><a href="#" class="menu__item-link" data-scroll>Swap</a></li>
+          <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Pool</a></li>
+          <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Listing</a></li>
+          <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Buy Crypto</a></li>
+          <li class="menu__item menu__item--mr"><a href="#" class="menu__item-link" data-scroll>Contact Us</a></li>
+          <li class="menu__item"><a href="#" class="menu__item-link btn open-modal-btn" data-modal-id="wallet"
+              data-scroll>Connect Wallet</a></li>
+        </ul>
+        <div class="burger">
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+    <!-- Main Page -->
+    <main class="main">
+      <h1 class="title">Bamba Swap</h1>
+
+      <form action="#" class="add-liqudity">
+  <div class="container">
+    <div class="add-liqudity__inner">
+      <div class="add-liqudity__head">
+        <button type="button" class="add-liqudity__back">
+          <img class="add-liqudity__back-icon" width="24" height="24" src="./img/icons/wallet-back.svg" alt="exit icon">
+        </button>
+
+        <h3 class="add-liqudity__title add-liqudity__title--not-dec">Add liquidity</h3>
+
+        <div class="add-liqudity__settings"> </div>
+      </div>
+
+      <div class="add-liqudity__main">
+        <div class="liqudity__head">
+          <div class="liqudity__head-info">
+            <div class="liqudity__head-icons">
+              <img class="liqudity__head-icon" width="36" height="36" src="./img/eth.svg" alt="token icon">
+              <img class="liqudity__head-icon" width="36" height="36" src="./img/usdt.svg" alt="token icon">
+            </div>
+
+            <div class="liqudity__head-names">
+              <p class="liqudity__head-name">ETH</p>
+              <span>/</span>
+              <p class="liqudity__head-name">USDT</p>
+            </div>
+
+          </div>
+          <div class="liqudity__head-range">out range</div>
+        </div>
+
+        <div class="liqudity__tokens">
+          <div class="liqudity__tokens-item">
+            <div class="liqudity__tokens-info">
+              <img class="liqudity__tokens-icon" width="30" height="30" src="./img/eth.svg" alt="token icon">
+              <p class="liqudity__tokens-name">ETH</p>
+            </div>
+
+            <div class="liqudity__tokens-sum">1.000</div>
+          </div>
+
+          <div class="liqudity__tokens-item">
+            <div class="liqudity__tokens-info">
+              <img class="liqudity__tokens-icon" width="30" height="30" src="./img/usdt.svg" alt="token icon">
+              <p class="liqudity__tokens-name">USDT</p>
+            </div>
+
+            <div class="liqudity__tokens-sum">0.006</div>
+          </div>
+
+          <div class="liqudity__tokens-item">
+            <div class="liqudity__tokens-info">
+              <p class="liqudity__tokens-name">Fee tier</p>
+            </div>
+
+            <div class="liqudity__tokens-sum">0.05%</div>
+          </div>
+        </div>
+
+        <div class="liqudity__set">
+          <div class="liqudity__set-head">
+            <p class="liqudity__set-label">Set price range</p>
+
+            <div class="liqudity__set-tokens">
+              <p class="liqudity__set-token active">ETH</p>
+              <p class="liqudity__set-token">USDT</p>
+            </div>
+          </div>
+
+          <div class="liqudity__set-columns">
+            <div class="liqudity__set-column">
+              <p class="liqudity__set-text">Min price</p>
+              <p class="liqudity__set-sum">0.002</p>
+              <p class="liqudity__set-text">USDT per ETH</p>
+              <p class="liqudity__set-descr">Your position will be 100% composed of USDT at this price</p>
+            </div>
+
+            <div class="liqudity__set-column">
+              <p class="liqudity__set-text">Max price</p>
+              <p class="liqudity__set-sum">0.002</p>
+              <p class="liqudity__set-text">USDT per ETH</p>
+              <p class="liqudity__set-descr">Your position will be 100% composed of USDT at this price</p>
+            </div>
+
+            <div class="liqudity__set-column liqudity__set-column--column-2">
+              <p class="liqudity__set-text">Current price</p>
+              <p class="liqudity__set-sum">0.00174</p>
+              <p class="liqudity__set-text">USDT per ETH</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="form__groups">
+          <label class="form__label" for="#">Deposit amounts</label>
+
+          <div class="form__group form__group--review">
+            <div class="form__swap">
+              <div class="form__swap-inputs">
+                <input class="form__swap-input" type="text" value="0.0004">
+                <div class="form__swap-usd">$5.23</div>
+              </div>
+
+              <div class="form__swap-select form__swap-select--bg">
+                <div class="form__swap-selcted open-modal-btn" data-modal-id="select-token">
+                  <img class="form__swap-selcted-icon" width="30" height="30" src="./img/eth.svg" alt="token icon">
+                  <p class="form__swap-selected-name">ETH</p>
+                  <img class="form__swap-selected-arrow" width="15" height="15" src="./img/icons/select-arrow.svg"
+                    alt="arrow icon">
+                </div>
+
+                <div class="form__swap-balance">
+                  <p class="form__swap-balance-text">Balance: 600.96</p>
+                  <button type="button" class="form__swap-balance-btn">Max</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="add-liqudity__footer">
+        <button type="button" class="add-liqudity__btn btn">Preview</button>
+      </div>
+    </div>
+  </div>
+</form>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <a class="footer__logo" href="#">
+        <img class="footer__logo-img" width="172" height="38" src="./img/logo.svg" alt="logo iocn">
+      </a>
+
+      <nav class="footer__nav">
+        <ul class="footer__list">
+          <li class="footer__item"><a class="footer__link" href="#">About project </a></li>
+          <li class="footer__item"><a class="footer__link" href="#">Participant of the Lucem Find project</a></li>
+          <li class="footer__item"><a class="footer__link" href="#">Swap Usage Rules</a></li>
+          <li class="footer__item"><a class="footer__link" href="#">Listing of new tokens</a></li>
+        </ul>
+
+        <ul class="footer__list">
+          <li class="footer__item"><a class="footer__link" href="#">Liquidity Provider</a></li>
+          <li class="footer__item"><a class="footer__link" href="#">Road map</a></li>
+          <li class="footer__item"><a class="footer__link" href="#">Partners</a></li>
+          <li class="footer__item"><a class="footer__link" href="#">Fee</a></li>
+          <li class="footer__item"><a class="footer__link" href="#">Pool</a></li>
+        </ul>
+
+        <ul class="footer__list">
+          <li class="footer__item"><a class="footer__link" href="#">Term of Use </a></li>
+          <li class="footer__item"><a class="footer__link" href="#">Contact of us</a></li>
+          <li class="footer__item"><a class="footer__link" href="#">Contact to Sale</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</footer>
+  </div>
+
+
+</body>
+
+<script src="./js/scripts.min.js"></script>
+
+</html>

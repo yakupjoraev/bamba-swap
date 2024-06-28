@@ -46,11 +46,13 @@
 </header>
 
     <!-- Main Page -->
-    <main>
+    <main class="main">
+      <h1 class="title">Bamba Swap</h1>
+
       <div class="main-swap">
   <div class="container">
     <div class="main-swap__inner">
-      <h1 class="title">Bamba Swap</h1>
+
 
       <form class="form" action="#">
         <div class="form__group">
@@ -854,6 +856,150 @@
             </li>
           </ul>
         </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+<!-- <button class="open-modal-btn" data-modal-id="add-liqudity-3">Open Modal add-liqudity-3</button> -->
+<div class="modal" id="add-liqudity-3">
+  <div class="modal-content modal-content--small">
+    <div class="modal__head">
+      <h3 class="modal__title modal__title--center">Add liquidity</h3>
+      <button type="button" class="close-modal-btn">
+        <img width="17" height="17" src="./img/icons/modal-close.svg" alt="close">
+      </button>
+    </div>
+
+    <div class="modal__inner">
+      <div class="liqudity">
+        <div class="liqudity__head">
+          <div class="liqudity__head-info">
+            <div class="liqudity__head-icons">
+              <img class="liqudity__head-icon" width="36" height="36" src="./img/eth.svg" alt="token icon">
+              <img class="liqudity__head-icon" width="36" height="36" src="./img/usdt.svg" alt="token icon">
+            </div>
+
+            <div class="liqudity__head-names">
+              <p class="liqudity__head-name">ETH</p>
+              <span>/</span>
+              <p class="liqudity__head-name">USDT</p>
+            </div>
+
+          </div>
+          <div class="liqudity__head-range">in range</div>
+        </div>
+
+        <div class="liqudity__tokens">
+          <div class="liqudity__tokens-item">
+            <div class="liqudity__tokens-info">
+              <img class="liqudity__tokens-icon" width="30" height="30" src="./img/eth.svg" alt="token icon">
+              <p class="liqudity__tokens-name">ETH</p>
+            </div>
+
+            <div class="liqudity__tokens-sum">1.000</div>
+          </div>
+
+          <div class="liqudity__tokens-item">
+            <div class="liqudity__tokens-info">
+              <img class="liqudity__tokens-icon" width="30" height="30" src="./img/usdt.svg" alt="token icon">
+              <p class="liqudity__tokens-name">USDT</p>
+            </div>
+
+            <div class="liqudity__tokens-sum">0.006</div>
+          </div>
+
+          <div class="liqudity__tokens-item">
+            <div class="liqudity__tokens-info">
+              <p class="liqudity__tokens-name">Fee tier</p>
+            </div>
+
+            <div class="liqudity__tokens-sum">0.05%</div>
+          </div>
+        </div>
+
+        <div class="liqudity__set">
+          <div class="liqudity__set-head">
+            <p class="liqudity__set-label">Set price range</p>
+
+            <div class="liqudity__set-tokens">
+              <p class="liqudity__set-token active">ETH</p>
+              <p class="liqudity__set-token">USDT</p>
+            </div>
+          </div>
+
+          <div class="liqudity__set-columns">
+            <div class="liqudity__set-column">
+              <p class="liqudity__set-text">Min price</p>
+              <p class="liqudity__set-sum">0.002</p>
+              <p class="liqudity__set-text">USDT per ETH</p>
+              <p class="liqudity__set-descr">Your position will be 100% composed of USDT at this price</p>
+            </div>
+
+            <div class="liqudity__set-column">
+              <p class="liqudity__set-text">Max price</p>
+              <p class="liqudity__set-sum">0.002</p>
+              <p class="liqudity__set-text">USDT per ETH</p>
+              <p class="liqudity__set-descr">Your position will be 100% composed of USDT at this price</p>
+            </div>
+
+            <div class="liqudity__set-column liqudity__set-column--column-2">
+              <p class="liqudity__set-text">Current price</p>
+              <p class="liqudity__set-sum">0.00174</p>
+              <p class="liqudity__set-text">USDT per ETH</p>
+            </div>
+          </div>
+        </div>
+
+        <button type="button" class="liqudity__btn btn">Add</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- <button class="open-modal-btn" data-modal-id="add-liqudity-4">Open Modal add-liqudity-4</button> -->
+<div class="modal" id="add-liqudity-4">
+  <div class="modal-content modal-content--small">
+    <div class="modal__head">
+      <button type="button" class="close-modal-btn">
+        <img width="17" height="17" src="./img/icons/modal-close.svg" alt="close">
+      </button>
+    </div>
+
+    <div class="modal__inner">
+      <div class="waiting">
+        <div class="waiting__loader"></div>
+
+        <h3 class="waiting__title">Waiting for confirmation</h3>
+        <h4 class="waiting__subtitle">Supplying 0.006898976 ETH and 1 USDT</h4>
+        <p class="waiting__text">Confirm this transaction in your wallet</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- <button class="open-modal-btn" data-modal-id="add-liqudity-5">Open Modal add-liqudity-5</button> -->
+<div class="modal" id="add-liqudity-5">
+  <div class="modal-content modal-content--small">
+    <div class="modal__head">
+      <button type="button" class="close-modal-btn">
+        <img width="17" height="17" src="./img/icons/modal-close.svg" alt="close">
+      </button>
+    </div>
+
+    <div class="modal__inner">
+
+      <div class="waiting">
+        <img class="swap-success__check" width="140" height="140" src="./img/icons/check-icon.svg" alt="cions">
+
+        <h3 class="waiting__title">Transaction Submitted</h3>
+
+        <button type="button" class="swap-success__btn btn">Close</button>
       </div>
     </div>
 

@@ -1,0 +1,233 @@
+<form action="#" class="add-liqudity">
+  <div class="container">
+    <div class="add-liqudity__inner">
+      <div class="add-liqudity__head">
+        <button type="button" class="add-liqudity__back">
+          <img class="add-liqudity__back-icon" width="24" height="24" src="./img/icons/wallet-back.svg" alt="exit icon">
+        </button>
+
+        <h3 class="add-liqudity__title">Add liquidity</h3>
+
+        <div class="add-liqudity__settings">
+          <button type="button" class="add-liqudity__settings-clear">Clear all</button>
+          <button class="add-liqudity__settings-btn">
+            <img class="add-liqudity__settings-btn-icon" width="20" height="20" src="./img/icons/setting.svg"
+              alt="setting icon">
+          </button>
+        </div>
+      </div>
+
+      <div class="add-liqudity__main">
+        <div class="form__groups">
+          <label class="form__label" for="#">Select pair</label>
+
+          <div class="form__group-double">
+            <div class="form__select">
+              <div class="form__selected open-modal-btn" data-modal-id="select-network">
+                <img class="form__selected-token" width="30" height="30" src="./img/eth.svg" alt="token img">
+                <span class="form__selected-name">ETH</span>
+                <img class="form__select-arrow" width="15" height="15" src="./img/icons/select-arrow.svg"
+                  alt="arrow cion">
+              </div>
+            </div>
+
+            <div class="form__select">
+              <div class="form__selected open-modal-btn" data-modal-id="select-network">
+                <img class="form__selected-token" width="30" height="30" src="./img/usdt.svg" alt="token img">
+                <span class="form__selected-name">USDT</span>
+                <img class="form__select-arrow" width="15" height="15" src="./img/icons/select-arrow.svg"
+                  alt="arrow cion">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="form__groups">
+          <div class="form__group-one">
+            <div class="form__tier">
+              <p class="form__tier-text">0.05% fee tier</p>
+
+              <button type="button" class="form__tier-hide">Hide</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="form__groups">
+          <div class="form__group-four">
+            <div class="form__pair">
+              <p class="form__pair-sum">0.01%</p>
+              <p class="form__pair-descr">Best for very stable pairs</p>
+
+              <img class="form__pair-icon" width="20" height="20" src="./img/icons/form-pair-check.svg"
+                alt="check icon">
+            </div>
+
+            <div class="form__pair">
+              <p class="form__pair-sum">0.05%</p>
+              <p class="form__pair-descr">Best for stable pairs</p>
+              <img class="form__pair-icon" width="20" height="20" src="./img/icons/form-pair-check.svg"
+                alt="check icon">
+            </div>
+
+            <div class="form__pair form__pair--check">
+              <p class="form__pair-sum">0.30%</p>
+              <p class="form__pair-descr">Best for most
+                pairs</p>
+              <img class="form__pair-icon" width="20" height="20" src="./img/icons/form-pair-check.svg"
+                alt="check icon">
+            </div>
+
+            <div class="form__pair">
+              <p class="form__pair-sum">1.00%</p>
+              <p class="form__pair-descr">Best for exotic pairs</p>
+              <img class="form__pair-icon" width="20" height="20" src="./img/icons/form-pair-check.svg"
+                alt="check icon">
+            </div>
+          </div>
+        </div>
+
+        <div class="form__groups">
+          <div class="form__group-one">
+            <div class="form__set">
+              <div class="form__set-head">
+                <p class="form__set-title">Set price range</p>
+
+                <div class="form__set-actions">
+                  <button type="button" class="form__set-full">Full range</button>
+
+                  <div class="form__set-radios">
+                    <label class="form__set-label" for="set-1">
+                      <input class="form__set-input" name="set" type="radio" checked id="set-1">
+
+                      <p class="form__set-text">ETH</p>
+                    </label>
+
+                    <label class="form__set-label" for="set-2">
+                      <input class="form__set-input" name="set" type="radio" id="set-2">
+
+                      <p class="form__set-text">USDT</p>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form__group form__group--review">
+                <div class="form__swap">
+                  <div class="form__swap-inputs">
+                    <label class="form__label" for="#">Low price</label>
+                    <input class="form__swap-input" type="text" value="575.755">
+                    <div class="form__swap-usd">USDT per ETH</div>
+                  </div>
+
+                  <div class="form__swap-controls">
+                    <div class="form__swap-control">+</div>
+                    <div class="form__swap-control">-</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form__group form__group--review">
+                <div class="form__swap">
+                  <div class="form__swap-inputs">
+                    <label class="form__label" for="#">High price</label>
+                    <input class="form__swap-input" type="text" value="575.755">
+                    <div class="form__swap-usd">USDT per ETH</div>
+                  </div>
+
+                  <div class="form__swap-controls">
+                    <div class="form__swap-control">+</div>
+                    <div class="form__swap-control">-</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="form__groups">
+          <div class="form__graph-container">
+            <div class="form__graph-head">
+              <div class="form__graph-info">
+                <p class="form__graph-text">Current price</p>
+                <p class="form__graph-sum">576.18</p>
+                <p class="form__graph-text">USDT per ETH</p>
+              </div>
+
+              <div class="form__graph-actions">
+                <button type="button" class="form__graph-action">
+                  <img class="form__graph-action-pic" width="24" height="24" src="./img/icons/graph-plus.svg"
+                    alt="plus icon">
+                </button>
+
+                <button type="button" class="form__graph-action">
+                  <img class="form__graph-action-pic" width="24" height="24" src="./img/icons/graph-minus.svg"
+                    alt="minus icon">
+                </button>
+              </div>
+            </div>
+
+            <div class="form__graph">
+              <img class="form__graph-pic" height="130" src="./img/graph.svg" alt="graph">
+            </div>
+          </div>
+
+        </div>
+
+        <div class="form__groups">
+          <label class="form__label" for="#">Deposit amounts</label>
+
+          <div class="form__group form__group--review">
+            <div class="form__swap">
+              <div class="form__swap-inputs">
+                <input class="form__swap-input" type="text" value="0.0004">
+                <div class="form__swap-usd">$5.23</div>
+              </div>
+
+              <div class="form__swap-select form__swap-select--bg">
+                <div class="form__swap-selcted open-modal-btn" data-modal-id="select-token">
+                  <img class="form__swap-selcted-icon" width="30" height="30" src="./img/eth.svg" alt="token icon">
+                  <p class="form__swap-selected-name">ETH</p>
+                  <img class="form__swap-selected-arrow" width="15" height="15" src="./img/icons/select-arrow.svg"
+                    alt="arrow icon">
+                </div>
+
+                <div class="form__swap-balance">
+                  <p class="form__swap-balance-text">Balance: 600.96</p>
+                  <button type="button" class="form__swap-balance-btn">Max</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="form__group form__group--review">
+            <div class="form__swap">
+              <div class="form__swap-inputs">
+                <input class="form__swap-input" type="text" value="0.0004">
+                <div class="form__swap-usd">$5.23</div>
+              </div>
+
+              <div class="form__swap-select form__swap-select--bg">
+                <div class="form__swap-selcted open-modal-btn" data-modal-id="select-token">
+                  <img class="form__swap-selcted-icon" width="30" height="30" src="./img/usdt.svg" alt="token icon">
+                  <p class="form__swap-selected-name">usdt</p>
+                  <img class="form__swap-selected-arrow" width="15" height="15" src="./img/icons/select-arrow.svg"
+                    alt="arrow icon">
+                </div>
+
+                <div class="form__swap-balance">
+                  <p class="form__swap-balance-text">Balance: 600.96</p>
+                  <button type="button" class="form__swap-balance-btn">Max</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="add-liqudity__footer">
+        <button type="button" class="add-liqudity__btn btn btn--grey">Previrew</button>
+        <button type="button" class="add-liqudity__btn btn">Approve USDT</button>
+      </div>
+    </div>
+  </div>
+</form>

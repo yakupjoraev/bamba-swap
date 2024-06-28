@@ -60,3 +60,13 @@ body {
     opacity: 1;
   }
 }
+
+@keyframes spin {
+  to {
+    border-top-color: #ec4c99;
+    border-right-color: #ec4c99;
+    border-bottom-color: #ec4c99;
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
