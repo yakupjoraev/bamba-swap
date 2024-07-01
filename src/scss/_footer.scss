@@ -4,6 +4,10 @@
   padding: 62px 0 72px;
   border-top: 1px solid rgba(255, 255, 255, 0.16);
 
+  .container {
+    max-width: 1780px;
+  }
+
   @media (max-width: $breakpoint992) {
     padding: 40px 0 60px;
     margin-top: 80px;

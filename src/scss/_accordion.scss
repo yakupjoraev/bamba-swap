@@ -85,10 +85,12 @@
   transition: max-height 0.4s linear, padding 0.3s linear;
 
   & a {
+    font-weight: 600;
     font-size: 14px;
-    line-height: 120%;
-    color: var(--gray);
+    line-height: 114%;
     text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #848484;
   }
 }
 
