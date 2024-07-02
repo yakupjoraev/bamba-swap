@@ -22,7 +22,8 @@
 
 .title {
   width: fit-content;
-  margin: 0 auto 60px;
+  margin: 0 auto;
+  padding-bottom: 60px;
   font-family: var(--font-family);
   font-weight: 600;
   font-size: 72px;
@@ -36,7 +37,8 @@
   mix-blend-mode: hard-light;
 
   @media (max-width: $breakpoint992) {
-    margin: 0 auto 40px;
+    margin: 0 auto 0;
+    padding-bottom: 40px;
     font-size: 48px;
   }
 

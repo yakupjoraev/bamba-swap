@@ -267,7 +267,8 @@ body.locked {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  margin: 0 auto 60px;
+  margin: 0 auto;
+  padding-bottom: 60px;
   font-family: var(--font-family);
   font-weight: 600;
   font-size: 72px;
@@ -1948,12 +1949,12 @@ body.locked {
   font-weight: 500;
   font-size: 24px;
   line-height: 100%;
-  text-align: right;
+  direction: rtl;
   color: var(--white);
 }
 
 .buy-crypto__text {
-  text-align: right;
+  direction: rtl;
   font-weight: 400;
   font-size: 14px;
   line-height: 100%;
@@ -3294,7 +3295,8 @@ body.locked {
   }
 
   .title {
-    margin: 0 auto 40px;
+    margin: 0 auto 0;
+    padding-bottom: 40px;
     font-size: 48px;
   }
 
@@ -3470,6 +3472,13 @@ body.locked {
   .menu__item--mr {
     margin-left: 0;
     margin-right: 0;
+    display: none;
+  }
+
+  .menu__item--cw {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
   }
 
   .menu__item-link {
