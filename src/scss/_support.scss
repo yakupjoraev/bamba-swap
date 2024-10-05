@@ -1,0 +1,270 @@
+.main:has(.support) {
+  margin: 100px 0 40px;
+
+
+  @media (max-width: $breakpoint992) {
+    margin: 40px 0 40px;
+  }
+}
+
+.support {
+  color: #0a0012;
+
+  // .support__inner
+
+  &__inner {
+    display: grid;
+    grid-template-columns: 410px 1fr;
+    column-gap: 60px;
+
+    @media (max-width: $breakpoint992) {
+      grid-template-columns: 300px 1fr;
+      column-gap: 20px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      grid-template-columns: repeat(1, 1fr);
+      row-gap: 40px;
+    }
+  }
+
+  // .support__aside
+
+  &__aside {
+    position: sticky;
+    top: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 32px 40px 60px;
+    border: 1px solid #e6e6e6;
+    border-radius: 10px;
+    height: fit-content;
+
+    @media (max-width: $breakpoint768) {
+      position: static;
+      padding: 20px;
+    }
+  }
+
+  // .support__form
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 26px;
+    width: 100%;
+
+    @media (max-width: $breakpoint768) {
+      row-gap: 12px;
+    }
+  }
+
+  // .support__aside-title
+
+  &__aside-title {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 100%;
+    color: #0a0012;
+
+    @media (max-width: $breakpoint768) {
+      font-size: 20px;
+    }
+  }
+
+  // .support__aside-search
+
+  &__aside-search {
+    position: relative;
+    z-index: 1;
+    height: 40px;
+    width: 100%;
+  }
+
+  // .support__aside-input
+
+  &__aside-input {
+    padding: 6px 40px 6px 20px;
+    width: 100%;
+    height: 40px;
+    outline: 0;
+    border: 1px solid #e6e6e6;
+    border-radius: 8px;
+    background-color: #f2f2f2;
+
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 140%;
+    color: #0a0012;
+
+    &::placeholder {
+      font-family: var(--font-family);
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 140%;
+      color: #0a0012;
+    }
+  }
+
+  // .support__aside-icon
+
+  &__aside-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+  }
+
+  // .support__list
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+
+    @media (max-width: $breakpoint768) {
+      row-gap: 4px;
+    }
+  }
+
+  // .support__item
+
+  &__item {}
+
+  // .support__btn
+
+  &__btn {
+    position: relative;
+    z-index: 1;
+    padding: 10px 10px 10px 24px;
+    display: flex;
+    width: 100%;
+    border-radius: 8px;
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+
+    font-family: var(--font-family);
+    font-weight: 400;
+    text-align: left;
+    font-size: 16px;
+    line-height: 100%;
+    color: #0a0012;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 12px;
+      width: 5px;
+      height: 5px;
+      border-radius: 100%;
+      background-color: #0a0012;
+    }
+
+    &.active {
+      background: #ec4c99;
+      color: var(--white);
+
+      &::before {
+        background-color: var(--white);
+      }
+    }
+
+    @media (hover:hover) {
+      &:hover {
+        background: #ec4c99;
+        color: var(--white);
+
+        &::before {
+          background-color: var(--white);
+        }
+      }
+    }
+
+    @media (max-width: $breakpoint768) {
+      padding: 8px 8px 8px 20px;
+      font-size: 14px;
+    }
+  }
+
+  // .support__main
+
+  &__main {}
+
+  // .support__title
+
+  &__title {
+    margin-bottom: 40px;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 100%;
+
+    @media (max-width: $breakpoint768) {
+      margin-bottom: 20px;
+      font-size: 30px;
+    }
+  }
+
+  // .support__contents
+
+  &__contents {
+    display: flex;
+    flex-direction: column;
+  }
+
+  // .support__content
+
+  &__content {
+    display: none;
+
+    &.active {
+      display: block;
+    }
+
+  }
+
+  // .support__block
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    margin-bottom: 40px;
+
+    @media (max-width: $breakpoint768) {
+      margin-bottom: 20px;
+      row-gap: 10px;
+    }
+  }
+
+  // .support__block-title
+
+  &__block-title {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 120%;
+
+    @media (max-width: $breakpoint768) {
+      font-size: 20px;
+    }
+  }
+
+  // .support__texts
+
+  &__texts {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    font-size: 14px;
+    line-height: 160%;
+
+    a {
+      text-decoration: underline;
+    }
+  }
+}

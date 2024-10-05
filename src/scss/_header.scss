@@ -1,5 +1,29 @@
 // Header
-.header {}
+.header {
+
+  &--support {
+    .menu__item-link {
+      color: #0A0012;
+    }
+
+    .menu__item.active {
+      .menu__item-link {
+        border-radius: 4px;
+        padding: 6px 16px 8px;
+        background: linear-gradient(51deg, #d3ced5 0%, #882ed2 100%);
+        color: var(--white);
+
+      }
+    }
+
+    .menu__item-link {
+
+      &.btn {
+        color: var(--white);
+      }
+    }
+  }
+}
 
 // Navbar
 .nav {}
@@ -71,6 +95,12 @@
 
 // Burger menu styles
 @media screen and (max-width: $burgerBreakpoint) {
+  .header--support {
+    .menu {
+      background: var(--white);
+    }
+  }
+
   .logo {
     z-index: 23;
   }

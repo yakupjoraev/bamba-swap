@@ -4,6 +4,11 @@
   padding: 62px 0 72px;
   border-top: 1px solid rgba(255, 255, 255, 0.16);
 
+  &--support {
+    padding: 36px 0 52px;
+    border-color: #ECECEC;
+  }
+
   .container {
     max-width: 1780px;
   }
@@ -72,7 +77,11 @@
 
   // .footer__item
 
-  &__item {}
+  &__item {
+    font-size: 14px;
+    line-height: 120%;
+    color: var(--grey-2);
+  }
 
   // .footer__link
 
@@ -80,6 +89,10 @@
     font-size: 14px;
     line-height: 120%;
     color: var(--grey-2);
+
+    &--underline {
+      text-decoration: underline;
+    }
   }
 }
 

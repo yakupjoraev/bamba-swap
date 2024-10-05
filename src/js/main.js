@@ -73,6 +73,30 @@ function toggleAccordion() {
 
 accordionItems.forEach(item => item.addEventListener('click', toggleAccordion));
 
+document.addEventListener("DOMContentLoaded", function () {
+  const container = document.querySelector('.support');
+
+  if (!container) {
+    return null
+  }
+
+  const tabButtons = document.querySelectorAll('.support__btn');
+  const tabContents = document.querySelectorAll('.support__content');
+
+  tabButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      // Удаляем класс active у всех кнопок и контентов
+      tabButtons.forEach(btn => btn.classList.remove('active'));
+      tabContents.forEach(content => content.classList.remove('active'));
+
+      // Добавляем класс active только той кнопке, на которую кликнули, и соответствующему контенту
+      button.classList.add('active');
+      const tabContentId = button.getAttribute('data-support-btn');
+      const activeTabContent = document.querySelector(`[data-support-content="${tabContentId}"]`);
+      activeTabContent.classList.add('active');
+    });
+  });
+});
 
 
 const openModalBtns = document.querySelectorAll('.open-modal-btn');
